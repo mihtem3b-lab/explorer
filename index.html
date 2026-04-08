@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore amazing blog posts and stories">
+    <title>Explorer - Blog & Stories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="explorer">
+        <header class="main">
+            <div class="container">
+                <div class="header">
+                    <a href="#" class="logo" title="Home">
+                        <img src="img/img 1.jpg" alt="Explorer Logo">
+                    </a>
+                    <button class="burger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navigation">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </button>
+                    <nav class="menu" id="navigation" role="navigation" aria-label="Main navigation">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#categories">Categories</a></li>
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#contact">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="hero-section">
+                    <h1>Discover Amazing Stories</h1>
+                    <p>Explore curated content from our community</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-value">150+</span>
+                            <span class="stat-label">Posts</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">50K+</span>
+                            <span class="stat-label">Readers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">20+</span>
+                            <span class="stat-label">Authors</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-section">
+                    <input 
+                        type="search" 
+                        id="searchInput" 
+                        class="search-box" 
+                        placeholder="Search posts..." 
+                        aria-label="Search blog posts"
+                    >
+                    <div class="filter-controls" role="group" aria-label="Filter posts">
+                        <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                        <button class="filter-btn" data-filter="travel" aria-pressed="false">Travel</button>
+                        <button class="filter-btn" data-filter="photography" aria-pressed="false">Photography</button>
+                        <button class="filter-btn" data-filter="lifestyle" aria-pressed="false">Lifestyle</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-container">
+            <div class="container">
+                <div class="content" id="contentGrid" role="list">
+                    <article class="project-card" data-category="travel" role="listitem">
+                        <div class="card-badge">Travel</div>
+                        <div class="project-img">
+                            <img src="img/img 2.jpg" alt="Beautiful mountain landscape" loading="lazy">
+                            <div class="image-overlay"></div>
+                            <div class="image-text">
+                                <div class="information">
+                                    <img src="img/img 3.jpg" alt="" loading="lazy">
+                                    <div>
+                                        <p class="author">Luke Cage</p>
+                                        <p class="date">October 11, 2016</p>
+                                    </div>
+                                </div>
+                                <h2>The 10 most beautiful places you should visit in your life</h2>
+                            </div>
+                        </div>
+                        <div class="project-text">
+                            <p>
+                                Vestibulum ut placerat nisl. Cras sed purus tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis posuere nisi sit amet neque finibus vestibulum. Vivamus at leo ut turpis posuere molestie.
+                            </p>
+                            <div class="card-footer">
+                                <div class="engagement-stats">
+                                    <span class="stat-badge">👁️ 2.3K</span>
+                                    <span class="stat-badge">❤️ 340</span>
+                                    <span class="stat-badge">💬 12</span>
+                                </div>
+                                <a href="#" class="read-more" aria-label="Read more about: The 10 most beautiful places you should visit in your life">Continue →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="lifestyle" role="listitem">
+                        <div class="card-badge">Lifestyle</div>
+                        <div class="project-img">
+                            <img src="img/img 4.jpg" alt="Wellness and lifestyle scene" loading="lazy">
+                            <div class="image-overlay"></div>
+                            <div class="image-text">
+                                <div class="information">
+                                    <img src="img/ava1.jpg" alt="" loading="lazy">
+                                    <div>
+                                        <p class="author">Luke Cage</p>
+                                        <p class="date">October 11, 2016</p>
+                                    </div>
+                                </div>
+                                <h2>The 10 most beautiful places you should visit in your life</h2>
+                            </div>
+                        </div>
+                        <div class="project-text">
+                            <p>
+                                Vestibulum ut placerat nisl. Cras sed purus tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis posuere nisi sit amet neque finibus vestibulum. Vivamus at leo ut turpis posuere molestie.
+                            </p>
+                            <div class="card-footer">
+                                <div class="engagement-stats">
+                                    <span class="stat-badge">👁️ 1.8K</span>
+                                    <span class="stat-badge">❤️ 215</span>
+                                    <span class="stat-badge">💬 8</span>
+                                </div>
+                                <a href="#" class="read-more" aria-label="Read more about: The 10 most beautiful places you should visit in your life">Continue →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="photography" role="listitem">
+                        <div class="card-badge featured">Photography</div>
+                        <div class="project-img">
+                            <img src="img/project2.jpg" alt="Photography equipment and gear" loading="lazy">
+                            <div class="image-overlay"></div>
+                            <div class="image-text">
+                                <div class="information">
+                                    <img src="img/ava2.jpg" alt="" loading="lazy">
+                                    <div>
+                                        <p class="author">Jessica Simpson</p>
+                                        <p class="date">June 12, 2016</p>
+                                    </div>
+                                </div>
+                                <h2>Perfect gear to take with you if you go on a photography trip</h2>
+                            </div>
+                        </div>
+                        <div class="project-text">
+                            <p>
+                                Vestibulum ut placerat nisl. Cras sed purus tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis posuere nisi sit amet neque finibus vestibulum. Vivamus at leo ut turpis posuere molestie.
+                            </p>
+                            <div class="card-footer">
+                                <div class="engagement-stats">
+                                    <span class="stat-badge">👁️ 3.2K</span>
+                                    <span class="stat-badge">❤️ 524</span>
+                                    <span class="stat-badge">💬 25</span>
+                                </div>
+                                <a href="#" class="read-more" aria-label="Read more about: Perfect gear to take with you if you go on a photography trip">Continue →</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="pagination" id="pagination" role="navigation" aria-label="Pagination">
+                    <button class="pagination-btn" id="prevBtn" aria-label="Previous page">← Previous</button>
+                    <span class="page-info" id="pageInfo">Page 1</span>
+                    <button class="pagination-btn" id="nextBtn" aria-label="Next page">Next →</button>
+                </div>
+
+                <div id="noResults" class="no-results" hidden>
+                    <p>No posts found matching your criteria.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer" role="contentinfo">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>About Explorer</h3>
+                        <p>Your destination for amazing stories and curated content from creators worldwide.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Twitter">𝕏</a>
+                            <a href="#" aria-label="Facebook">f</a>
+                            <a href="#" aria-label="Instagram">📷</a>
+                            <a href="#" aria-label="LinkedIn">in</a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Browse All Posts</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Top Authors</a></li>
+                            <li><a href="#">Trending</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Newsletter</h3>
+                        <p>Get the best stories delivered to your inbox.</p>
+                        <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                            <input type="email" placeholder="Your email" aria-label="Email address" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Explorer. All rights reserved.</p>
+                    <p>Built with accessibility and performance in mind.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
